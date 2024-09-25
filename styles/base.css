@@ -2,10 +2,10 @@
 :root {
     --font-family: "Inria Sans", sans-serif;
     --dark-grey: #2B2D42;
-    --grey: #8D99AE;
+    --grey: #b6c0d3;
     --light-grey: #EDF2F4;
-    --red:#EF233C;
-    --dark-red:#950e24;
+    --red:#950e24;
+    --dark-red:#660414;
 }
 
 body {
