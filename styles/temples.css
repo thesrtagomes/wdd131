@@ -1,0 +1,101 @@
+:root {
+    --font-family: "Playfair Display", serif;
+    --dark-green: #1e2f0a;
+    --green: #b6c489;
+    --light-cream:#FEFAE0;
+    --cream:#DDA15E;
+    --dark-cream:#BC6C25;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--light-cream);
+}
+
+header{
+    background-color: var(--dark-green);
+    color: var(--light-cream); 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+}
+header h1 {
+    flex: 1;
+}
+header a {
+    color: var(--light-cream);
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.4em;
+    flex: 1;
+}
+header a:hover {
+    color: var(--dark-green);
+    background-color: var(--green);
+}
+
+header nav {
+    display: none;
+    flex-direction: column;
+    flex: 1 1 100%;
+}
+
+header nav.show {
+    display: flex;
+}
+
+#hamburger-menu {
+    color: var(--light-cream);
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+#hamburger-menu::before {
+    content: "☰";
+}
+#hamburger-menu.show::before {
+    content: "X";
+}
+.album-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    text-align: center;
+}
+main figure {
+    flex: 1 1 100%;
+}
+main figure img {
+    width: 100%;
+}
+main figure figcaption {
+    text-align: center;
+    padding: 0.5em;
+}
+footer {
+    background-color: var(--dark-green);
+    color: var(--light-cream);
+    text-align: center;
+    padding: 0.7em;
+}
+footer h4, footer h5 {
+    margin: 10px;
+}
+footer h5 {
+    color: var(--green);
+}
+
