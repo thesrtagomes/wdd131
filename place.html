@@ -6,6 +6,9 @@
     <title>Czech Republic</title>
     <meta name="description" content="Week 3 project: WDD 131 - Dynamic Web Fundamentals, created by Pamela Gomes. ">
     <meta name="author" content="Pamela Gomes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/place-mobile.css">
     <link rel="stylesheet" href="styles/place-desktop.css">
     <script src="scripts/place.js" defer></script>
@@ -16,9 +19,9 @@
         <h1>Czech Republic</h1>
     </header>
     <main>
-        <picture id="hero">
-            <source srcset="images/desktop-img-cz.webp" media="(min-width: 900px)">
-            <img src="images/mobile-img-cz.webp" alt="Czech Republic with River and Boats" width="400">
+        <picture >
+            <source srcset="images/desktop-img-cz.webp" media="(min-width: 700px)">
+            <img id="hero" src="images/mobile-img-cz.webp" alt="Czech Republic with River and Boats" width="390">
         </picture>
         <section>
             <h1>Data</h1>
@@ -35,8 +38,8 @@
             <div id="weather-container">
                 <h1>Weather</h1>
                 <picture>
-                    <source srcset="#" media="min-width:1000px">
-                    <img src="#" alt="weather icon" id="weather-icon-desktop">
+                    <source srcset="images/desktop-icon.svg" media="(min-width:700px)">
+                    <img id="weather-icon" src="images/mobile-icon.svg" alt="weather icon" >
                 </picture>
             </div>
             <p><strong>Temperature: </strong></p>
