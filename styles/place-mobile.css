@@ -3,7 +3,7 @@
     --light-blue: #8ECAE6;
     --medium-blue:#006b99;
     --dark-blue: #023047;
-    --yellow:#FFB703;
+    --yellow:#ffa303da;
     --orange:#FB8500;
     --light-yellow: #fcefd2;
     --white :#ffff;
@@ -21,7 +21,7 @@ body {
 
 header {
     background-color: var(--medium-blue);
-    padding: 5px 0;
+    padding: 20px 0;
     border-bottom: 10px solid var(--yellow);
     display: flex;
     justify-content: center; /* Centers horizontally */
@@ -30,7 +30,7 @@ header {
 
 header h1 {
     color: var(--white);
-    font-size: 1.2em;
+    font-size: 2rem;
 }
 
 #hero {
@@ -59,12 +59,13 @@ footer {
     flex-direction:column;
     width: 100%;
     background-color: var(--medium-blue);
-    padding: 5px 0;
+    padding: 20px 0;
     justify-content: center; 
     align-items: center;
 }
 
 footer h4, footer h5 {
+    font-size: 0.8em;
     color: var(--white);
     margin: 0;
     padding: 0;
