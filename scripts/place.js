@@ -5,3 +5,6 @@ currentYearElement.innerHTML = today.getFullYear()
 
 const lastUpdatedElement = document.getElementById("lastupdated")
 lastUpdatedElement.innerHTML = document.lastModified
+
+
+// create a function called calculateWindChill

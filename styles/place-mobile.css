@@ -1,14 +1,22 @@
 :root {
     --font-family:"Archivo", sans-serif; ;
     --light-blue: #8ECAE6;
-    --medium-blue:#219EBC;
+    --medium-blue:#006b99;
     --dark-blue: #023047;
     --yellow:#FFB703;
     --orange:#FB8500;
+    --light-yellow: #fcefd2;
+    --white :#ffff;
 }
 
 body {
     font-family: var(--font-family);
+    height: 100%;
+    margin: 0; /* tira a margem e a borda default do navegador*/
+    padding: 0;
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -21,7 +29,7 @@ header {
 }
 
 header h1 {
-    color: white;
+    color: var(--white);
     font-size: 1.2em;
 }
 
@@ -30,5 +38,37 @@ header h1 {
     height: auto;
     display: block;
 }
+
+.data {
+    background-color: var(--light-yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    line-height: 0.5em;
+    margin-top: 10px;
+    padding-top: 20px;    
+}
+
+#weather-icon {
+    width: 35%;
+}
+
+footer {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    background-color: var(--medium-blue);
+    padding: 5px 0;
+    justify-content: center; 
+    align-items: center;
+}
+
+footer h4, footer h5 {
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+} 
 
 
