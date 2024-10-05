@@ -7,6 +7,7 @@
     --orange:#FB8500;
     --light-yellow: #fcefd2;
     --white :#ffff;
+    --opaque-light-yellow: #fcefd294;
 }
 
 body {
@@ -52,6 +53,14 @@ header h1 {
 
 #weather-icon {
     width: 35%;
+}
+
+#weather-emoji {
+    display: none;
+}
+
+#globe-emoji {
+    display: none;
 }
 
 footer {

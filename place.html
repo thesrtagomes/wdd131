@@ -23,8 +23,8 @@
             <source srcset="images/desktop-img-cz.webp" media="(min-width: 700px)">
             <img id="hero" src="images/mobile-img-cz.webp" alt="Czech Republic with River and Boats" width="390">
         </picture>
-        <section class="data">
-            <h1>Data</h1>
+        <section class="data" id="top-left-section">
+            <h1 id="data">Data</h1>
             <p><strong>Area: </strong>78,871 km2</p>
             <p><strong>Population: </strong>11,235,000</p>
             <p><strong>Capital: </strong>Prague</p>
@@ -34,14 +34,14 @@
             <p><strong>Calling Code: </strong>+420</p>
             <p><strong>Internet TLD: </strong>.cz</p>
         </section>
-        <section class="data">
-                <h1>Weather</h1>
+        <section class="data" id="bottom-right-section">
+                <h1 id="weather">Weather</h1>
                 <img id="weather-icon" src="images/mobile-icon.svg" alt="weather icon" >
 
-            <p><strong>Temperature: </strong></p>
-            <p><strong>Conditions: </strong></p>
-            <p><strong>Wind: </strong></p>
-            <p><strong>Wind Chill: </strong></p>
+            <p><strong>Temperature: </strong><span id="temperature-label"></span></p>
+            <p><strong>Conditions: </strong><span id="conditions-label"></span></p>
+            <p><strong>Wind: </strong><span id="wind-label"></span></p>
+            <p><strong>Wind Chill: </strong><span id="wind-chill-label"></span></p>
         </section>
     </main>
     <footer>
@@ -50,5 +50,3 @@
       </footer>
 </body>
 </html>
-
-<!-- 🌤️ colocar ele quando o view for maior que 700, o Weather passa a ser weather 🌤️--> 
