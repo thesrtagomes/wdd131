@@ -1,0 +1,40 @@
+:root {
+    --font-family: "Playfair Display", serif;
+    --background: #f7f6ec;
+	--typography: #30342d;
+    --accent: rgb(21, 236, 154);
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--background);
+	color: var(--typography);
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+
+footer {
+    background-color: var(--accent);
+    color: var(--typography);
+    text-align: center;
+    padding: 0.7em;
+	bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+footer h4, footer h5 {
+    margin: 10px;
+}
+
