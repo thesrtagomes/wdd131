@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Product Review</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, created by Pamela Gomes. Form Activity.">
     <meta name="author" content="Pamela Gomes">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,23 +23,23 @@
             <div>
                 <label for="productName">Product Name</label>
                 <select name="productName" id="productName" required>
-                    <option disabled selected>Select a Product...</option>
+                    <option disabled selected value="">Select a Product...</option>
                 </select>
     
                 <label for="stars">Overall Rating</label>
-                <div class="stars">
+                <fieldset id="stars" class="stars">
                     <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
                     <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
                     <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
                     <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
                     <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
-                </div>
+                </fieldset>
     
                 <label for="dateOfInstallation">Date of Installation</label>
                 <input type="date" name="dateOfInstallation" id="dateOfInstallation" required>
     
                 <label for="usefulFeatures">Useful Features</label>
-                <div class="usefulFeatures">
+                <fieldset id="usefulFeatures" class="usefulFeatures">
                     <input type="checkbox" name="usefulFeatures" id="usefulFeaturesDurability" value="durability">
                     <label for="usefulFeaturesDurability">Durability</label>
                     <input type="checkbox" name="usefulFeatures" id="usefulFeaturesEaseOfUse" value="easeOfUse">
@@ -48,7 +48,7 @@
                     <label for="usefulFeaturesPerformance">Performance</label>
                     <input type="checkbox" name="usefulFeatures" id="usefulFeaturesDesign" value="design">
                     <label for="usefulFeaturesDesign">Design</label>
-                </div>
+                </fieldset>
     
                 <label for="writtenReview">Written Review</label>
                 <textarea name="writtenReview" id="writtenReview" rows="5"></textarea>
