@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pamela Gomes">
+    <meta name="description" content="Final Project of Dynamic Web Fundamentals provided by BYU-Idaho and created by Pamela Gomes">
+    <link rel="stylesheet" href="./styles/details.css">
+    <link rel="stylesheet" href="./styles/theme.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <script src="scripts/dataload.js" defer></script>
+    <script src="scripts/details.js" defer></script>
+    <title>Plant Details</title>
+</head>
+<body>
+   <header>
+    <a href="./index.html">
+        <img id="homepage_logo" src="./images/homepage_logo_transp.svg" alt="Home Icon">
+    </a>
+    <p><strong><span id="plant-name"></span></strong></p>
+    <a class="nav" href="form.html" title="Add New Plant">ADD NEW PLANT</a>
+    <a class="nav" href="mailto:pamela.gomes.work@gmail.com" title="Contac Us">CONTACT US</a>
+   </header>
+   <main>
+    <div id="details-data">
+        <p><strong>Scientific Name: </strong><span id="scientific-name"></span></p>
+        <p><strong>Origin: </strong><span id="origin"></span></p>
+        <p><strong>Curiosities: </strong><span id="curiosities"></span></p>
+        <p><strong>Fertilization: </strong><span id="fertilization"></span></p>
+        <p><strong>Environment Preference: </strong><span id="environment"></span></p>
+        <p><strong>Lighting: </strong><span id="lighting"></span></p>
+        <p><strong>Hydration: </strong><span id="hydration"></span></p>
+        <p><strong>Growing Season: </strong><span id="growing-season"></span></p>
+    </div>
+    <div id="details-image">
+        <img src="#" alt="Plant image">
+    </div>
+   </main>
+   <a href="form.html" id="edit-button">EDIT PLANT</a>
+   <footer>
+    <span>2024 - Pamela Gomes</span>
+   </footer>
+</body>
+</html>

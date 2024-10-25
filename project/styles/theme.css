@@ -1,0 +1,17 @@
+:root {
+    --title-font: "Roboto Flex", sans-serif;
+    --paragraph-font: "Roboto", sans-serif;
+    --body-background-color: #E5E4E4;
+    --light-green: #b1d19c;
+    --light-green-transp: #b1d19cb9;
+    --green:#7e9b6b;
+    --dark-green: #1F4A23;
+    --light-pink-transp: #eeadb68e;
+    --light-pink: #eeadb6;
+    --pink: #F4257F;
+    --dark-grey: #241B1A;
+}
+
+body {
+    background-color: var(--body-background-color);
+}

@@ -1,0 +1,44 @@
+
+main {
+    font-family: var(--titles-font);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-top: 10px solid var(--light-pink);
+    
+}
+
+main h2 {
+    font-size: 0.95em;
+    font-weight: bolder;
+}
+
+
+#images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+main div img {
+    max-width: 100%;
+    width: 180px;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1/1; /* serve para deixar as imagens quadradinhas de igual tamanho*/
+}
+
+#add_button {
+    margin-top: 30px;
+    margin-left: auto;
+}
+
+#add_button img {
+    padding-top: 30px;
+    height: 35px;
+    width: 35px;
+}
+

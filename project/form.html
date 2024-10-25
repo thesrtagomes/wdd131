@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pamela Gomes">
+    <meta name="description" content="Final Project of Dynamic Web Fundamentals provided by BYU-Idaho and created by Pamela Gomes">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/theme.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+    <title>New Plant Form</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <img id="homepage_logo" src="./images/homepage_logo_transp.svg" alt="Home Page Logo" title="Homepage">
+        </a>
+        <h1><span id="nome_da_planta">ADD NEW PLANT</span></h1>
+        <a class="nav" href="form.html" title="Add New Plant">ADD NEW PLANT</a>
+        <a class="nav" href="mailto:pamela.gomes.work@gmail.com" title="Contac Us">CONTACT US</a>
+    </header>
+    <main>
+      <div id="form">
+        <form action="submit.html" method="get">
+          <ul>
+            <li>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="plant-name" />
+            </li>
+            <li>
+              <label for="scientific-name">Scientific Name:</label>
+              <input type="text" id="scientific-name" name="scientific-name" />
+            </li>
+            <li>
+              <label for="origin">Origin:</label>
+              <input type="text" id="origin" name="origin">
+            </li>
+            <li>
+                <label for="curiosities">Curiosities:</label>
+                <input type="text" id="curiosities" name="curiosities" />
+            </li>
+            <li>
+              <label for="fertilization">Fertilization:</label>
+              <input type="text" id="fertilization" name="fertilization"/>
+          </li>
+            <li>
+              <label for="environment-preference">Environment Preference:</label>
+              <input type="text" id="environment" name="environment-preference"/>
+          </li>
+            <li>
+                <label for="lighting">Lighting:</label>
+              <input type="text" id="lighting" name="lighting"/>
+            </li>
+            <li>
+                <label for="hydration">Hydration:</label>
+              <input type="text" id="hydration" name="hydration"/>
+            </li>
+            <li>
+              <label for="growing-season">Growing Season:</label>
+              <input type="text" id="growing-season" name="growing-season">
+            </li>
+          </ul>
+          <li class="button" id="upload">
+            <label for="image"><img src="./images/add-image.svg" alt="Upload Icon" title="Upload your Image"></label>
+            <input type="file" name="image" id="image">
+          </li>
+          <li class="button">
+            <button type="submit" title="Save your Plant">SAVE</button>
+          </li>
+        </form>
+    </div>
+    </main>
+    <footer>
+        <span>2024 - Pamela Gomes</span>
+    </footer>
+</body>
+</html>
