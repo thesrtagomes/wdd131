@@ -7,6 +7,7 @@ plantDetails.forEach(plant => {
     plantLink.href = `details.html?id=${plant.id}`
     plantImage.src= plant.image
     plantImage.loading = "lazy"
+    plantImage.alt = plant.name 
     
     plantLink.appendChild(plantImage)
     imagesElement.appendChild(plantLink)
