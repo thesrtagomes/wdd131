@@ -68,15 +68,18 @@ main {
 
 footer {
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
+    align-items: center;
     background-color: var(--green);
     padding: 20px;
+    gap: 10px;
 }
 
 footer span {
-    display: block;
     text-decoration: none;
+
     color: black;  
     background: linear-gradient(to right, var(--green), var(--light-green), var(--body-background-color), var(--light-green), var(--green)); 
     padding: 5px 35px 5px 35px;
@@ -84,4 +87,24 @@ footer span {
     font-family: var(--paragraph-font);
     font-size: 1em;
    
+}
+
+footer .nav {
+    color: var(--dark-grey);
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    margin: 0;
+}
+
+@media screen and (max-width: 600px){
+    header {
+        grid-template-columns: 100px 1fr;
+    }
+
+    #add_new_plant {
+        display: none;
+
+    }
+    
 }

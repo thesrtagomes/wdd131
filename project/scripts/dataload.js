@@ -24,7 +24,7 @@ const defaultPlantDetails = [
         lighting: "Prefers indirect light or low light. Avoid direct sunlight, as it can burn the leaves.",
         growingSeason: "Year-round, but it blooms more frequently in spring and summer.",
         hydration: "Likes consistently moist soil but should not be waterlogged. Water when the topsoil dries out, and mist regularly to maintain humidity.",
-        image: "../images/peace-lily.webp"
+        image: "./images/peace-lily.webp"
     },
 
     {
@@ -38,7 +38,7 @@ const defaultPlantDetails = [
         lighting: " Prefers partial shade to full shade, making them perfect for areas with indirect sunlight.",
         hydration: "Requires regular watering. Soil should be kept moist but not soggy.",
         growingSeason: "Late spring through fall. It thrives in warm weather but can be grown year-round in tropical climates.",
-        image: "../images/touch-me-not.webp"
+        image: "./images/touch-me-not.webp"
     },
 
     {
@@ -52,7 +52,7 @@ const defaultPlantDetails = [
         lighting: "Prefers bright, indirect light but can tolerate low light conditions. Avoid direct sunlight to prevent leaf burn.",
         hydration: "Likes the soil to be kept evenly moist but not waterlogged. Regular watering and misting to increase humidity are essential.",
         growingSeason: "Spring through fall, though it can grow year-round in warm indoor environments.",
-        image: "../images/syngonium.webp"
+        image: "./images/syngonium.webp"
     },
 
     {
@@ -66,7 +66,7 @@ const defaultPlantDetails = [
         lighting: "Thrives in low light but also tolerates bright, indirect light.",
         hydration: " Needs very little water. Water thoroughly and then allow the soil to dry out completely before watering again.",
         growingSeason: "Spring and summer, but it grows slowly throughout the year with minimal care.",
-        image: "../images/zanzibar-gem.webp"
+        image: "./images/zanzibar-gem.webp"
     },
 
     {
@@ -80,8 +80,12 @@ const defaultPlantDetails = [
         lighting: "Prefers bright, indirect sunlight but can tolerate direct sunlight for a few hours a day.",
         hydration: "Needs very little water. Water thoroughly but infrequently, allowing the soil to dry completely between watering sessions.",
         growingSeason: "Spring through fall, though it can grow year-round in favorable conditions (indoors or in warm climates).",
-        image: "../images/zebra-haworthia.webp"
+        image: "./images/zebra-haworthia.webp"
     },
-    
-
 ]
+
+if (!localStorage.getItem('plants')) {
+    localStorage.setItem('plants', JSON.stringify(defaultPlantDetails))
+}
+
+const plantDetails = JSON.parse(localStorage.getItem('plants'))

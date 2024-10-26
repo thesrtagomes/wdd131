@@ -1,4 +1,7 @@
-const pageDetails = defaultPlantDetails[0]
+const urlParams = new URLSearchParams(location.search)
+const id = urlParams.get('id')
+
+const pageDetails = plantDetails.find(plant => plant.id === id)
 
 const plantNameElement = document.querySelector("#plant-name")
 plantNameElement.textContent = pageDetails.name
@@ -27,3 +30,8 @@ hydrationElement.textContent = pageDetails.hydration
 const growingSeasonElement = document.querySelector("#growing-season")
 growingSeasonElement.textContent = pageDetails.growingSeason
 
+const imageElement = document.querySelector("#details-image img")
+imageElement.src = pageDetails.image
+
+const editButtonElement = document.querySelector('#edit-button')
+editButtonElement.href = `form.html?id=${id}`
